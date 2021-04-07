@@ -1,0 +1,107 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --bright-orange: hsl(31,77%,52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+
+    /*Paragraphs*/
+    --transaparent-white: hsla(0, 0%, 100%, 0.75);
+    /*Background, Headings, Buttons*/
+    --very-light-gray: hsl(0, 0%, 95%);
+}
+body{
+    font-size: 15px;
+    font-family: 'Big Shoulders Display', cursive;
+    font-family: 'Lexend Deca', sans-serif;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-flow: wrap row;
+}
+.container1{
+    width: 375px;
+    background-color: var(--bright-orange);
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+.container2{
+    width: 375px;
+    background-color: var(--dark-cyan);
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+.container3{
+    width: 375px;
+    background-color: var(--very-dark-cyan);
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+.attribution{
+    display: none;
+}
+h1{
+    width: 50%;
+    padding: 20px 0;
+    text-align: left;
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 3rem;
+    text-transform: uppercase;
+    line-height: 4rem;
+    font-weight: 700;
+    color: var(--very-light-gray);
+}
+p{
+    width: 50%;
+    text-align: left;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 1rem;
+    line-height: 2rem;
+    font-weight: 400;
+    color: var(--transaparent-white);
+}
+img{
+    width: 80px;
+    position: relative;
+    display: block;
+    margin-top: 30px;
+    right: 80px;
+}
+a{
+    position: relative;
+    display: block;
+    top: 40px;
+    margin-bottom: 60px;
+    padding: 15px 30px;
+    border-radius: 30px;
+    border: 1px solid var(--very-light-gray);
+    color: var(--very-light-gray);
+    cursor: pointer;
+    text-decoration: none;
+}
+a:hover{
+    background-color: var(--very-light-gray);
+}
+.container1 a:hover{
+    color: var(--bright-orange);
+}
+.container2 a:hover{
+    color: var(--dark-cyan);
+}
+.container3 a:hover{
+    color: var(--very-dark-cyan);
+}
